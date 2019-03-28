@@ -12,22 +12,26 @@ public class MoveCharacter : MonoBehaviour
     public float direction;
     Animator animator;
 
+    float initialScaleX;
     void Awake ()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
+
+        initialScaleX = transform.localScale.x;
     }
 
     void FixedUpdate ()
     {
         var x = Input.GetAxis(axisName: "Horizontal");
         rb.AddForce(x * Vector2.right * acceleration);
+        animator.SetFloat("Speed", Mathf.Abs(x));
 
         var Speed = Mathf.Clamp(rb.velocity.x, -speed, speed);
         rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y);
 
         direction = Mathf.Sign(x);
 
-        transform.localScale = new Vector3(direction, transform.localScale.y, transform.localScale.z);
+        transform.localScale = new Vector3(direction * initialScaleX, transform.localScale.y, transform.localScale.z);
     }
 }
