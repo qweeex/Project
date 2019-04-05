@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Фигурки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>
+        <h2>Square</h2>
+        <div id="square">Квадратик</div>
+    </p>
+    <p>
+        <h2>Rectangle</h2>
+        <div id = "rectangle">Черный текст на черном фоне</div>
+    </p>
+    <p>
+            <h2>Circle</h2>
+            <div id = "circle">Кружок</div>
+    </p>
+    <p>
+            <h2>Oval</h2>
+            <div id = "oval">Овал</div>
+    </p>
+</body>

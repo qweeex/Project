@@ -1,0 +1,25 @@
+td{
+    text-align: center;
+    color: lightslategrey;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tr{
+    background-color: whitesmoke;
+}
+
+.img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+h3{
+    font-size: 50px;
+    color:darkred;
+}
+
+p{
+    font-size: 20px;
+}

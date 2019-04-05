@@ -33,5 +33,15 @@ public class MoveCharacter : MonoBehaviour
         direction = Mathf.Sign(x);
 
         transform.localScale = new Vector3(direction * initialScaleX, transform.localScale.y, transform.localScale.z);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector2.up * jumpforce, ForceMode2D.Impulse);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            animator.SetTrigger("attack");
+        }
     }
 }

@@ -1,0 +1,55 @@
+th {
+  background: linear-gradient(#262343, black);
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(103, 71, 31);
+}
+table {
+  background-color: #0A0816;
+}
+td {
+  text-align: center;
+  color:  rgb(103, 71, 31);
+  line-height: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+h4 {
+  border: 1px solid;
+  padding: 20px;
+  margin: 75px;
+  background-color: black;
+}
+a {
+  text-decoration:none;
+  color: silver;
+}
+.x {
+font-size: 30px;
+}
+
+.devider_1 {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.spellicon {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  max-width: 100%;
+}
+
+h3 {
+  margin-top: 10px;
+}
+h5 {
+  color: silver;
+}
+
+.spelltext {
+  padding: 20px;
+  text-align:justify;
+}
