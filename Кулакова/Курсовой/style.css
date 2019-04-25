@@ -1,0 +1,51 @@
+@font-face{
+
+    font-family: 'CaviarDreams';
+    src: url('Fonts/CaviarDreams.ttf');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face{
+    font-family: 'Arsenal-Regular';
+    src: url('Fonts/Arsenal-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+aside {
+    background: #f0f0f0;
+    padding-left: 10px;
+    width: 200px;
+    float: left;
+    margin: auto;
+    color: gray;
+    font-family: CaviarDreams;
+    font-size: 18px;
+   }
+   h1 {
+       text-align: center;
+       font-family: CaviarDreams
+   }
+   body {
+    background-image: url(fon1.jpg); /* Путь к фоновому изображению */
+    background-color: #f5f2eea4; /* Цвет фона */
+   }
+   .block{
+    width: 50%;
+    background: linear-gradient(whitesmoke, white);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 15%;
+    text-align: justify;
+    align-content: center;
+    font-family: Arsenal-Regular;
+    padding-right: 10px;
+   }
+   .img{
+       padding-right: 15px;
+       padding-left:5px;
+       padding-top:5px;
+       padding-bottom: 20px;
+   }
+
