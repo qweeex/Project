@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>FanSite</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body link="gray" vlink="gray" alink="black">
+    <aside>
+        <p><a href="index.html">Главная страница</a></p>
+    </aside>
+<div class="regblock">
+    <div>
+      <h1>Регистрация</h1>
+    </div>
+    <form method="post">
+      <div class="fields">
+        <label for="name">Имя</label>
+      </div>
+        <div class="fields">
+        <input type="text" name="name" required>
+      </div>
+      <div class="radio">
+        <span>Пол</span>
+        <label>
+          <input type="radio" name="sex" value="мужской">мужской
+        </label>
+        <label>
+          <input type="radio" name="sex" value="женский">женский
+        </label>
+      </div>
+      <div class="fields">
+        <label for="email">E-mail</label>
+      </div>
+    <div class="fields">
+        <input type="email" name="email" required>
+      </div>
+      <div class="count">
+        <label for="country">Страна</label>
+      </div>
+      <div class="fields">
+        <select name="country">
+          <option>Выберите страну проживания</option>
+          <option value="Россия">Россия</option> 
+          <option value="Украина">Украина</option> 
+          <option value="Беларусь">Беларусь</option> 
+        </select>
+      </div>
+      <div class="fields">
+      <button type="submit">Отправить</button> 
+    </div>
+    </form> 
+  </div>

@@ -46,6 +46,19 @@ aside {
     font-family: Arsenal-Regular;
     padding-right: 10px;
    }
+   .regblock{
+    width: 500px;
+    height: 400px;
+    background: linear-gradient(whitesmoke,white);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: justify;
+    align-content: center;
+    margin-left: 35%;
+    border:2px solid black;
+    border-color: gray;
+   }
    .bioblock{
     width: 70%;
     background: linear-gradient(whitesmoke, white);
@@ -91,5 +104,35 @@ aside {
        width: 426px;
        height: 320px;
    }
-
-
+   .radio{
+       display:flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       margin-left: 50px;
+       font-family: Arsenal-Regular;
+   }
+   .fields{
+       display:block;
+       margin: 10px;
+       margin-left: 50px;
+       font-family: Arsenal-Regular;
+   }
+   .count{
+       display:block;
+       margin:10px;
+       margin-left:50px;
+       font-family: Arsenal-Regular;
+   }
+   button {
+    padding: 10px 0;
+    border-width: 0;
+    display: block;
+    width: 120px;
+    margin: 25px auto 0;
+    background: silver;
+    color: black;
+    font-size: 14px;
+    outline: none;
+    text-transform: uppercase;
+    font-family: Arsenal-Regular;
+  }
