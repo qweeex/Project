@@ -13,11 +13,14 @@
 </head>
 <body link="gray" vlink="gray" alink="black">
     <h1>Фан-сайт Стивена Хокинга</h1>
-    <aside>
-        <p><a href="index.html">Главная страница</a></p>
-        <p><a href="bio.html">Биография</a></p>
-        <p><a href="progress.html">Достижения</a></p>
-        <p><a href="reg.html">Регистрация</a></p>
+    <aside id="aside" class="menu">
+        <span class="title">Меню</span>
+        <ul>
+        <li><a href="index.html">Главная страница</a></li>
+        <li><a href="bio.html">Биография</a></li>
+        <li><a href="progress.html">Достижения</a></li>
+        <li><a href="reg.html">Регистрация</a></li>
+        </ul>
     </aside>
     <div class="block">
         <img class="img" alt="mainph" src="mainph.jpg">
@@ -40,8 +43,15 @@
             </table>
         </p>
     </div>
-    <div>
+    <div class="f">
         <h1>Press <a href="respect.html">F</a> to pay respects</h1>
     </div>
+    <script>
+    var menuElem = document.getElementById('aside');
+    var titleElem = menuElem.querySelector('.title');
+    titleElem.onmouseover = function() {
+    menuElem.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>

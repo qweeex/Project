@@ -13,12 +13,15 @@
 </head>
     <body link="gray" vlink="gray" alink="black">
         <h1>Биография</h1>
-        <aside>
-                <p><a href="index.html">Главная страница</a></p>
-                <p><a href="bio.html">Биография</a></p>
-                <p><a href="progress.html">Достижения</a></p>
-                <p><a href="reg.html">Регистрация</a></p>
-        </aside>
+        <aside id="aside" class="menu">
+                        <span class="title">Меню</span>
+                        <ul>
+                        <li><a href="index.html">Главная страница</a></li>
+                        <li><a href="bio.html">Биография</a></li>
+                        <li><a href="progress.html">Достижения</a></li>
+                        <li><a href="reg.html">Регистрация</a></li>
+                        </ul>
+                    </aside>
             <div class="bioblock">
                 <h3>Происхождение</h3>
                 <p>
@@ -53,5 +56,12 @@
                 <img class="imgr" alt="steevy" src="steevy.jpeg">
                 <p>Плита на могиле Стивена Хокинга в Вестминстерском аббатстве</p>
             </div>
+            <script>
+                        var menuElem = document.getElementById('aside');
+                        var titleElem = menuElem.querySelector('.title');
+                        titleElem.onmouseover = function() {
+                        menuElem.classList.toggle('open');
+                            }
+                        </script>
 </body>
 </html>

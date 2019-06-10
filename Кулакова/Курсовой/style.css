@@ -11,6 +11,42 @@
     font-weight: normal;
     font-style: normal;
 }
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+  }
+
+  .menu .title {
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .menu .title::before {
+    content: '▶ ';
+    font-size: 80%;
+    color: black;
+  }
+
+  .menu.open .title::before {
+    content: '▼ ';
+  }
+
+  .menu.open ul {
+    display: block;
+  }
+a {
+    color: gray;
+    text-decoration: none;
+   }
+   a:visited {
+    color: gray;
+   } 
+   a:hover {
+    color: black; 
+    text-decoration: underline;
+   }
 aside {
     background: #f0f0f0;
     padding-left: 10px;
@@ -45,10 +81,40 @@ aside {
     align-content: center;
     font-family: Arsenal-Regular;
     padding-right: 10px;
+    visibility: hidden;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.7s; 
+    -webkit-animation-duration: 0.7s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
+    visibility: visible !important; 
    }
    .regblock{
     width: 500px;
-    height: 400px;
+    height: 480px;
+    background: linear-gradient(whitesmoke,white);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: left;
+    align-content: center;
+    margin-left: 35%;
+    border:2px solid black;
+    border-color: gray;
+    font-family: Arsenal-Regular;
+   }
+   .question{
+       padding:5px;
+       font-family: Arsenal-Regular;
+   }
+   .result{
+       padding:10px;
+       font-family: Arsenal-Regular;
+   }
+   .testblock{
+    width: 500px;
+    height: 480px;
     background: linear-gradient(whitesmoke,white);
     display: flex;
     flex-wrap: nowrap;
@@ -71,6 +137,14 @@ aside {
     font-family: Arsenal-Regular;
     padding-left: 10px;
     padding-right: 10px;
+    visibility: hidden;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.7s; 
+    -webkit-animation-duration: 0.7s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
+    visibility: visible !important; 
    }
    .blockb{
     width: 70%;
@@ -94,6 +168,7 @@ aside {
        padding-bottom: 20px;
    }
    .imgf{
+       visibility: hidden;
        margin:auto;
        padding-top:3%;
         padding-left:17%;
@@ -123,7 +198,7 @@ aside {
        margin-left:50px;
        font-family: Arsenal-Regular;
    }
-   button {
+   .mybtn1 {
     padding: 10px 0;
     border-width: 0;
     display: block;
@@ -135,4 +210,37 @@ aside {
     outline: none;
     text-transform: uppercase;
     font-family: Arsenal-Regular;
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.5s ease;
   }
+  .mybtn1:hover{
+      background: black;
+      color: silver;
+  }
+  .f{
+    opacity: 0.3;
+    animation-name: opacity-hover;
+    -webkit-animation-name: opacity-hover; 
+    animation-duration: 0.5s; 
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: linear; 
+    -webkit-animation-timing-function: linear;
+    opacity:1;
+  }
+  .imgf {
+    visibility: hidden;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 1.7s; 
+    -webkit-animation-duration: 1.7s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
+    visibility: visible !important; 
+    }
+    @keyframes myopacity{0%{opacity:0}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8}90%{opacity:.9}100%{opacity:1}}
+    @-webkit-keyframes myopacity{0%{opacity:0}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8}90%{opacity:.9}100%{opacity:1}}
+    @keyframes opacity-hover{0%{opacity:.3}20%{opacity:.4}40%{opacity:.5}60%{opacity:.6}80%{opacity:.7}90%{opacity:.9}100%{opacity:1}}
+    @-webkit-keyframes opacity-hover{0%{opacity:.3}20%{opacity:.4}40%{opacity:.5}60%{opacity:.6}80%{opacity:.7}90%{opacity:.9}100%{opacity:1}}

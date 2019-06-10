@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MoveCharacter : MonoBehaviour
 {
     public float speed = 10f;
     public float acceleration = 30f;
     public float jumpforce = 5f;
+    public float dashforce = 50f;
     public float spd;
     Rigidbody2D rb;
     public float direction;
@@ -36,6 +38,7 @@ public class MoveCharacter : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            animator.SetTrigger("jump");
             rb.AddForce(Vector2.up * jumpforce, ForceMode2D.Impulse);
         }
 
@@ -43,5 +46,22 @@ public class MoveCharacter : MonoBehaviour
         {
             animator.SetTrigger("attack");
         }
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            animator.SetTrigger("attack1");
+            if (direction == 1)
+                rb.AddForce(Vector2.right * dashforce, ForceMode2D.Impulse);
+            if (direction == -1)
+                rb.AddForce(Vector2.left * dashforce, ForceMode2D.Impulse);
+        }
     }
+
+    void OnTriggerEnter2D (Collider2D col)
+    {
+        if (col.gameObject.tag == "EndLevel")
+        {
+            SceneManager.LoadScene(+2);
+        }
+    }
+ 
 }

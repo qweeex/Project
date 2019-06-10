@@ -12,9 +12,22 @@
     </style>
 </head>
     <body link="gray" vlink="gray" alink="black">
-        <aside>
-                <p><a href="index.html">Главная страница</a></p>
-        </aside>
+                <aside id="aside" class="menu">
+                                <span class="title">Меню</span>
+                                <ul>
+                                <li><a href="index.html">Главная страница</a></li>
+                                <li><a href="bio.html">Биография</a></li>
+                                <li><a href="progress.html">Достижения</a></li>
+                                <li><a href="reg.html">Регистрация</a></li>
+                                </ul>
+                </aside>
 <img class="imgf" alt="mainph" src="F.jpg">
+<script>
+                var menuElem = document.getElementById('aside');
+                var titleElem = menuElem.querySelector('.title');
+                titleElem.onmouseover = function() {
+                menuElem.classList.toggle('open');
+                    }
+</script>
     </body>
     </html>

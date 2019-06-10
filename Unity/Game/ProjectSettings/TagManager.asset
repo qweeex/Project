@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Barrier
+  - Ammo
+  - Sword
+  - Drop
+  - Door
+  - Key
+  - Player1
+  - EndLevel
   layers:
   - Default
   - TransparentFX
@@ -44,4 +51,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 583095373
+    locked: 0
+  - name: ammo
+    uniqueID: 249503653
     locked: 0
