@@ -1,0 +1,468 @@
+@font-face{
+
+  font-family: 'CaviarDreams';
+  src: url('Fonts/CaviarDreams.ttf');
+  font-weight: normal;
+  font-style: normal;
+  }
+@font-face{
+  font-family: 'Arsenal-Regular';
+  src: url('Fonts/Arsenal-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h3{
+  text-align: center;
+  font-family: Arsenal-Regular;
+  padding-left: 20px;
+}
+.mybtn1 {
+  padding: 10px 0;
+  border-width: 0;
+  display: block;
+  width: 120px;
+  margin: 25px auto 0;
+  background: silver;
+  color: black;
+  font-size: 14px;
+  outline: none;
+  text-transform: uppercase;
+  font-family: Arsenal-Regular;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+.mybtn1:hover{
+    background: lightseagreen;
+    color: silver;
+}
+.testblock{
+  padding:5px;
+  margin-top: 10%;  
+  width: 500px;
+  height: 400px;
+  background: linear-gradient(silver, whitesmoke);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  text-align: justify;
+  align-content: center;
+  margin-left: 35%;
+  border:2px solid black;
+  border-color: gray;
+  font-family: Arsenal-Regular;
+ }
+ .img{
+   width: 340px;
+   height: 227px;
+   padding-left: 20px;
+   transition: 0.5s;
+ }
+ .img1{
+  width: 400px;
+  height: 227px;
+  padding-left: 20px;
+  transition: 0.5s;
+}
+.img1:hover{
+  transform: scale(1.5);
+}
+ .img:hover{
+   transform: scale(1.5);
+ }
+ .chooseblock{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   margin: auto;
+ }
+ .serial,.mserial,.dserial,.fserial,.lserial,.amserial,.pserial,.bserial,.endserial{
+   width:800px;
+   height:350px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   margin:auto;
+   background-color: whitesmoke;
+   font-family: Arsenal-Regular;
+   border: 6px solid whitesmoke;
+  border-radius: 15px 100px 15px 100px;
+ }
+ .pserial{
+   width:760px;
+   height:500px;
+ }
+ .mserial{
+  width:800px;
+  height:500px;
+}
+.dserial{
+  width:800px;
+  height:470px;
+}
+.fserial{
+  width:800px;
+  height:420px;
+}
+.lserial{
+  width: 800px;
+  height: 600px;
+}
+.amserial{
+  width:950px;
+  height: 450px;
+}
+.bserial{
+  width:1000px;
+  height: 450px;
+}
+.endserial{
+  width: 1000px;
+  height: 450px;
+}
+ .serial-child{
+   width:350px;
+  background:whitesmoke;
+  color:gray;
+ }
+ .shimg{
+  width:355px;
+  height:250px;
+  padding-right: 10px;
+  border:1px solid whitesmoke;
+  border-radius: 10px;
+ }
+ .merimg{
+   width:340px;
+   height: 420px;
+   padding-right: 10px;
+   border:1px solid whitesmoke;
+   border-radius: 10px;
+ }
+ .darimg{
+   width:360px;
+   height: 390px;
+   padding-right: 10px;
+   border:1px solid whitesmoke;
+   border-radius: 10px;
+ }
+ .fimg{
+   width:356px;
+   height:350px;
+   padding-right: 10px;
+   border:1px solid whitesmoke;
+   border-radius: 10px;
+ }
+ .limg{
+   width:340px;
+   height: 520px;
+   padding-right: 10px;
+   border:1px solid whitesmoke;
+   border-radius: 10px;
+ }
+ .amimg{
+   width:500px;
+   height: 367px;
+   padding-right: 10px;
+   border:1px solid whitesmoke;
+   border-radius: 10px;
+ }
+ .bimg{
+   width:560px;
+   height:356px;
+   padding-right: 10px;
+   border:1px solid whitesmoke;
+   border-radius: 10px;
+ }
+ .endimg{
+   width:580px;
+   height:360px;
+   padding-right: 10px;
+   border:1px solid whitesmoke;
+   border-radius: 10px;
+ }
+ .question{
+  padding:15px;
+  font-family: Arsenal-Regular;
+}
+.one{
+  display: inline;
+  margin: 10px;
+}
+aside {
+  padding-top: 20px;
+  padding-left: 10px;
+  float: left;
+  color: gray;
+  font-family: CaviarDreams;
+  font-size: 18px;
+ }
+.back,.back1,.back2,.back3,.back4,.back5,.back6,.back7,.back8,.back9,.back10,.back11,.back12,.back13,.back14,.back15,.back16,.back17,.back18,.back19,.back20,.back21{
+display: flex;
+width: 100vw;
+height: 100vh;
+background-color: black;
+background-image: url(https://pp.userapi.com/c855720/v855720803/71fe1/scplIKORB44.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+.back1{
+  background-image: url(https://pp.userapi.com/c855720/v855720803/71feb/1kgk4ctfL18.jpg);
+  }
+  .back2{
+    background-image: url(https://pp.userapi.com/c855720/v855720803/71ff5/UcdkriSSWj4.jpg);
+  }
+  .back3{
+    background-image: url(https://pp.userapi.com/c855720/v855720803/71fff/UGgN34gf4UA.jpg);
+  }
+  .back4{
+    background-image: url(https://pp.userapi.com/c855720/v855720803/72024/9ZaAHSJnLNQ.jpg);
+  }
+  .back5{
+    background-image: url(https://pp.userapi.com/c855720/v855720292/74535/VAX4rRizq1o.jpg);
+  }
+  .back6{
+    background-image: url(https://pp.userapi.com/c855720/v855720292/7453f/4csb2M9Zl9k.jpg);
+  }
+  .back7{
+    background-image: url(https://images.wallpaperscraft.ru/image/london_bi_ben_london_big_ben_vecher_reka_zdaniya_vid_sverhu_chb_30804_1920x1080.jpg);
+  }
+  .back8{
+    background-image: url(https://img3.goodfon.ru/original/1920x1200/8/c7/gorod-ulitsa-tuman.jpg);
+  }
+  .back9{
+    background-image: url(https://images.wallpaperscraft.ru/image/takho_kaliforniya_doroga_gory_115949_3840x2160.jpg);
+  }
+  .back10{
+    background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/05/03/349027/06b16ed45f4db765341f321fe820517d.jpg);
+  }
+  .back11{
+    background-image: url(https://wallpapercave.com/wp/wp2001496.jpg)
+  }
+  .back12{
+    background-image: url(http://wp.widewallpapers.ru/2k/cities/new-york/1920x1200/New-York-1920x1200-002.jpg);
+  }
+  .back13{
+    background-image: url(https://wallscloud.net/uploads/cache/70056909/palmy_rassvet_ptitsy_125099_1920x1080-1024x576-MM-90.jpg);
+  }
+  .back14{
+    background-image: url(https://images8.alphacoders.com/561/thumb-1920-561830.jpg);
+  }
+  .back15{
+    background-image: url(https://pp.userapi.com/c856132/v856132245/6738c/2ZW28Xcc_FI.jpg);
+  }
+  .back16{
+    background-image: url(https://img4.goodfon.ru/original/1920x1080/8/a4/gorod-ssha-los-andzheles-gory.jpg);
+  }
+  .back17{
+    background-image: url(http://www.fullhdoboi.ru/_ph/8/176845855.jpg?1560487780);
+  }
+  .back18{
+    background-image: url(http://www.setwalls.ru/pic/201304/1920x1080/setwalls.ru-23219.jpg);
+  }
+  .back19{
+    background-image: url(http://hq-oboi.ru/photo/london_vestminsterskiy_dvorec_1920x1200.jpg);
+  }
+  .back20{
+    background-image: url(https://pp.userapi.com/c855624/v855624485/734b5/MDWTSpqRP24.jpg);
+  }
+  .back21{
+    background-image: url(https://pp.userapi.com/c855624/v855624485/734d1/f7lqX57IV8k.jpg);
+  }
+.res{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 10%;
+  margin-left: 45%;
+}
+h1 {
+  text-align: center;
+  font-family: CaviarDreams;
+}
+.regblock{
+  width: 500px;
+  height: 480px;
+  background: linear-gradient(whitesmoke,white);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  text-align: left;
+  align-content: center;
+  margin:auto;
+  border:2px solid black;
+  border-color: gray;
+  font-family: Arsenal-Regular;
+  padding-bottom: 30px;
+ }
+ .fields{
+  display:block;
+  margin: 10px;
+  margin-left: 50px;
+  font-family: Arsenal-Regular;
+}
+.radio{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 50px;
+  font-family: Arsenal-Regular;
+}
+.count{
+  display:block;
+  margin:10px;
+  margin-left:50px;
+  font-family: Arsenal-Regular;
+}
+.center {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url(https://images.unsplash.com/photo-1446080501695-8e929f879f2b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=34658e73aff775c8d4eec54bbfd1c011);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .center__text {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120px;
+    text-transform: uppercase;
+  }
+  
+  .glitch {
+    position: relative;
+    color: white;
+    mix-blend-mode: lighten;
+  }
+  .glitch:before, .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: black;
+    clip: rect(0, 0, 0, 0);
+  }
+  .glitch:before {
+    left: -1px;
+    text-shadow: 1px 0 rgba(255, 0, 0, 0.7);
+  }
+  .glitch:after {
+    left: 1px;
+    text-shadow: -1px 0 rgba(0, 0, 255, 0.7);
+  }
+  .glitch:hover:before {
+    text-shadow: 4px 0 rgba(255, 0, 0, 0.7);
+    animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse;
+  }
+  .glitch:hover:after {
+    text-shadow: -5px 0 rgba(0, 0, 255, 0.7);
+    animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
+  }
+  
+  @-webkit-keyframes glitch-loop-1 {
+    0% {
+      clip: rect(36px, 9999px, 9px, 0);
+    }
+    25% {
+      clip: rect(25px, 9999px, 99px, 0);
+    }
+    50% {
+      clip: rect(50px, 9999px, 102px, 0);
+    }
+    75% {
+      clip: rect(30px, 9999px, 92px, 0);
+    }
+    100% {
+      clip: rect(91px, 9999px, 98px, 0);
+    }
+  }
+  
+  @keyframes glitch-loop-1 {
+    0% {
+      clip: rect(36px, 9999px, 9px, 0);
+    }
+    25% {
+      clip: rect(25px, 9999px, 99px, 0);
+    }
+    50% {
+      clip: rect(50px, 9999px, 102px, 0);
+    }
+    75% {
+      clip: rect(30px, 9999px, 92px, 0);
+    }
+    100% {
+      clip: rect(91px, 9999px, 98px, 0);
+    }
+  }
+  @-webkit-keyframes glitch-loop-2 {
+    0% {
+      top: -1px;
+      left: 1px;
+      clip: rect(65px, 9999px, 119px, 0);
+    }
+    25% {
+      top: -6px;
+      left: 4px;
+      clip: rect(79px, 9999px, 19px, 0);
+    }
+    50% {
+      top: -3px;
+      left: 2px;
+      clip: rect(68px, 9999px, 11px, 0);
+    }
+    75% {
+      top: 0px;
+      left: -4px;
+      clip: rect(95px, 9999px, 53px, 0);
+    }
+    100% {
+      top: -1px;
+      left: -1px;
+      clip: rect(31px, 9999px, 149px, 0);
+    }
+  }
+  @keyframes glitch-loop-2 {
+    0% {
+      top: -1px;
+      left: 1px;
+      clip: rect(65px, 9999px, 119px, 0);
+    }
+    25% {
+      top: -6px;
+      left: 4px;
+      clip: rect(79px, 9999px, 19px, 0);
+    }
+    50% {
+      top: -3px;
+      left: 2px;
+      clip: rect(68px, 9999px, 11px, 0);
+    }
+    75% {
+      top: 0px;
+      left: -4px;
+      clip: rect(95px, 9999px, 53px, 0);
+    }
+    100% {
+      top: -1px;
+      left: -1px;
+      clip: rect(31px, 9999px, 149px, 0);
+    }
+  }
+  @import url("https://fonts.googleapis.com/css?family=Heebo:800");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (max-width: 700px) {
+  .parent {
+    margin-left: 1%;
+  }
+}

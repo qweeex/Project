@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Ford</title>
+    <link href="style.css" rel="stylesheet">
+    <script>
+        document.createElement('aside');
+    </script>
+    <style>
+        a { 
+         text-decoration: none;
+        }
+    </style>
+</head>
+<body link="gray" vlink="gray" alink="black">
+    <h1>Ford Motor Company</h1>
+    <aside id="aside" class="menu">
+        <span class="title">Меню</span>
+        <ul>
+        <li><a href="index.html">Главная страница</a></li>
+        <li><a href="bio.html">История</a></li>
+        <li><a href="quest.html">Опрос</a></li>
+        <li><a href="reg.html">Регистрация</a></li>
+        </ul>
+    </aside>
+    <div class="block">
+        <img class="img" alt="mainph1" src="mainph1.jpg">
+        <p>
+            Ford (Ford Motor Company) — американская автомобилестроительная компания, производитель автомобилей под маркой Ford. Четвёртый в мире производитель автомобилей по объёму выпуска за весь период существования; 
+            в настоящее время — третий на рынке США после GM и Toyota, и второй в Европе после Volkswagen. 
+            Занимает девятое место в списке крупнейших публичных компаний США Fortune 500 по состоянию на 2015 год и 27 место в списке крупнейших мировых корпораций Global 500 2015 года. 
+            Штаб-квартира компании располагается в городе Дирборн в пригороде Детройта в штате Мичиган. Около пятой части доходов от продаж продукции и предоставляемых услуг составляет федеральный клиентский сектор обслуживания военных заказов (без учёта иностранных заказчиков американского вооружения и военной техники).
+        </p>
+    </div>
+    <div class="f">
+        <a href="https://www.ford.ru/experience-ford/history-and-heritage"><img class="logo" alt="logo" src="logo.png"></a>
+    </div>
+    <script>
+    var menuElem = document.getElementById('aside');
+    var titleElem = menuElem.querySelector('.title');
+    titleElem.onmouseover = function() {
+    menuElem.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

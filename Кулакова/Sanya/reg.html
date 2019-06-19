@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <title>FanSite</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body link="gray" vlink="gray" alink="black">
+    <aside id="aside" class="menu">
+        <span class="title">Меню</span>
+        <ul>
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="bio.html">История</a></li>
+            <li><a href="quest.html">Опрос</a></li>
+            <li><a href="reg.html">Регистрация</a></li>
+        </ul>
+    </aside>
+<div class="regblock">
+    <div>
+      <h1>Регистрация</h1>
+    </div>
+    <form method="post">
+      <div class="fields">
+        <label for="name">Имя</label>
+      </div>
+        <div class="fields">
+        <input type="text" name="name" required>
+      </div>
+      <div class="radio">
+        <span>Пол</span>
+        <label>
+          <input type="radio" name="sex" value="мужской">мужской
+        </label>
+        <label>
+          <input type="radio" name="sex" value="женский">женский
+        </label>
+      </div>
+      <div class="fields">
+        <label for="email">E-mail</label>
+      </div>
+    <div class="fields">
+        <input type="email" name="email" required>
+      </div>
+      <div class="count">
+        <label for="country">Страна</label>
+      </div>
+      <div class="fields">
+        <select name="country">
+          <option>Выберите страну проживания</option>
+          <option value="Россия">Россия</option> 
+          <option value="Украина">Украина</option> 
+          <option value="Беларусь">Беларусь</option> 
+        </select>
+      </div>
+      <div class ="fields">
+          <label for="country">Пароль</label>
+      </div>
+      <div class="fields">
+      <input name="password" type="password" placeholder="password"  id="pass1" onkeyup="checkPass(); return false;" />
+<input name="repeatpassword" type="password" placeholder="confirm password" id="pass2" onkeyup="checkPass(); return false;" />
+<div id="error-nwl"></div>
+</div>
+      <div class="fields">
+      <button type="submit" class="mybtn1">Отправить</button> 
+    </div>
+    </form> 
+  </div>
+  <script>
+      var menuElem = document.getElementById('aside');
+      var titleElem = menuElem.querySelector('.title');
+      titleElem.onmouseover = function() {
+      menuElem.classList.toggle('open');
+          }
+  </script>
+  <script>
+    function checkPass()
+{
+    var pass1 = document.getElementById('pass1');
+    var pass2 = document.getElementById('pass2');
+    var message = document.getElementById('error-nwl');
+    var goodColor = "#66cc66";
+    var badColor = "#ff6666";
+ 	
+    if(pass1.value.length > 5)
+    {
+        message.style.color = goodColor;
+        message.innerHTML = "Намана"
+    }
+    else
+    {
+        message.style.color = badColor;
+        message.innerHTML = "Вы пароле должно быть не менее 6 символов"
+        return;
+    }
+  
+    if(pass1.value == pass2.value)
+    {
+        message.style.color = goodColor;
+        message.innerHTML = "Сойдёт"
+    }
+	else
+    {
+        message.style.color = badColor;
+        message.innerHTML = "Пароли не совпадают"
+    }
+}  
+  </script>
+      </body>

@@ -1,0 +1,259 @@
+@font-face{
+
+    font-family: 'CaviarDreams';
+    src: url('Fonts/CaviarDreams.ttf');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face{
+    font-family: 'Arsenal-Regular';
+    src: url('Fonts/Arsenal-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+  }
+
+  .menu .title {
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .menu .title::before {
+    content: '▶ ';
+    font-size: 80%;
+    color: black;
+  }
+
+  .menu.open .title::before {
+    content: '▼ ';
+  }
+
+  .menu.open ul {
+    display: block;
+  }
+a {
+    color: gray;
+    text-decoration: none;
+   }
+   a:visited {
+    color: gray;
+   } 
+   a:hover {
+    color: black; 
+    text-decoration: underline;
+   }
+aside {
+    background: #f0f0f0;
+    padding-left: 10px;
+    width: 200px;
+    float: left;
+    margin: auto;
+    color: gray;
+    font-family: CaviarDreams;
+    font-size: 18px;
+   }
+   h1 {
+       text-align: center;
+       font-family: CaviarDreams;
+   }
+   h3 {
+       text-align: left;
+       font-family: Arsenal-Regular;
+       padding-left: 20px;
+   }
+   body {
+    background-image: url(fon1.jpg);
+    background-color: #f5f2eea4;
+   }
+   .block{
+    width: 70%;
+    background: linear-gradient(whitesmoke, white);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: 15%;
+    text-align: justify;
+    align-content: center;
+    font-family: Arsenal-Regular;
+    padding-right: 10px;
+    visibility: hidden;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.7s; 
+    -webkit-animation-duration: 0.7s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
+    visibility: visible !important; 
+   }
+   .regblock{
+    width: 500px;
+    height: 480px;
+    background: linear-gradient(whitesmoke,white);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: left;
+    align-content: center;
+    margin-left: 35%;
+    border:2px solid black;
+    border-color: gray;
+    font-family: Arsenal-Regular;
+   }
+   .question{
+       padding:5px;
+       font-family: Arsenal-Regular;
+   }
+   .result{
+       padding:10px;
+       font-family: Arsenal-Regular;
+   }
+
+   h3{
+    text-align: center;
+    font-family: Arsenal-Regular;
+    padding-left: 20px;
+  }
+  .mybtn1 {
+    padding: 10px 0;
+    border-width: 0;
+    display: block;
+    width: 120px;
+    margin: 25px auto 0;
+    background: silver;
+    color: black;
+    font-size: 14px;
+    outline: none;
+    text-transform: uppercase;
+    font-family: Arsenal-Regular;
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.5s ease;
+  }
+  .mybtn1:hover{
+      background: black;
+      color: silver;
+  }
+  .testblock{
+    padding:5px;
+    margin-top: 10%;  
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(silver, gray);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: justify;
+    margin-left: 35%;
+    border:2px solid black;
+    border-color: gray;
+    font-family: Arsenal-Regular;
+   }
+   .question{
+    padding:10px;
+    font-family: Arsenal-Regular;
+  }
+  .back{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-image: url(img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+  .bioblock{
+  width: 70%;
+  background: linear-gradient(whitesmoke, white);
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  padding:10px;
+  margin-bottom: 20px;
+  font-family: Arsenal-Regular;
+  visibility: hidden;
+  animation-name: myopacity;
+  -webkit-animation-name: myopacity; 
+  animation-duration: 0.7s; 
+  -webkit-animation-duration: 0.7s;
+  animation-timing-function: ease-out; 
+  -webkit-animation-timing-function: ease-out; 
+  visibility: visible !important; 
+   }
+   .img{
+       width:40%;
+       height:40%;
+       padding-right: 15px;
+       padding-left:5px;
+       padding-top:5px;
+       padding-bottom: 20px;
+   }
+   .imgf{
+       visibility: hidden;
+       margin:auto;
+       padding-top:3%;
+        padding-left:17%;
+   }
+
+   .imgh{
+    display: flex;
+    flex-direction: column;
+       width:255px;
+       height:304px;
+   }
+   .logo{
+     width: 15%;
+     height: 15%;
+     margin-left: 45%;
+   }
+   .radio{
+       display:flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       margin-left: 50px;
+       font-family: Arsenal-Regular;
+   }
+   .fields{
+       display:block;
+       margin: 10px;
+       margin-left: 50px;
+       font-family: Arsenal-Regular;
+   }
+   .count{
+       display:block;
+       margin:10px;
+       margin-left:50px;
+       font-family: Arsenal-Regular;
+   }
+   
+  .f{
+    opacity: 0.3;
+    animation-name: opacity-hover;
+    -webkit-animation-name: opacity-hover; 
+    animation-duration: 0.5s; 
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: linear; 
+    -webkit-animation-timing-function: linear;
+    opacity:1;
+  }
+  .imgf {
+    visibility: hidden;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 1.7s; 
+    -webkit-animation-duration: 1.7s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
+    visibility: visible !important; 
+    }
+    @keyframes myopacity{0%{opacity:0}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8}90%{opacity:.9}100%{opacity:1}}
+    @-webkit-keyframes myopacity{0%{opacity:0}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8}90%{opacity:.9}100%{opacity:1}}
+    @keyframes opacity-hover{0%{opacity:.3}20%{opacity:.4}40%{opacity:.5}60%{opacity:.6}80%{opacity:.7}90%{opacity:.9}100%{opacity:1}}
+    @-webkit-keyframes opacity-hover{0%{opacity:.3}20%{opacity:.4}40%{opacity:.5}60%{opacity:.6}80%{opacity:.7}90%{opacity:.9}100%{opacity:1}}

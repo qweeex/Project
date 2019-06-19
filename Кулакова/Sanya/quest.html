@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Quest</title>
+    <link href="style.css" rel="stylesheet">
+    <script>
+        document.createElement('aside');
+    </script>
+    <style>
+        a { 
+         text-decoration: none;
+        }
+    </style>
+</head>
+<body link="gray" vlink="gray" alink="black">
+    <aside id="aside" class="menu">
+        <span class="title">Меню</span>
+        <ul>
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="bio.html">История</a></li>
+            <li><a href="quest.html">Опрос</a></li>
+            <li><a href="reg.html">Регистрация</a></li>
+        </ul>
+    </aside>
+<div class="testblock">
+<h3>Опрос</h3>
+<div class="question">
+  <p>У вас есть права?</p>
+  <input type="radio" name="r1" id="Answer" data-value='5'><label>Да</label>
+  <input type="radio" name="r1" id="Answer" data-value='0'><label>Нет</label>
+</div>
+
+<div class="question">
+  <p>Где вы живете?</p>
+  <input type="radio" name="r2" id="Answer" data-value='1'><label>В городе</label>
+  <input type="radio" name="r2" id="Answer" data-value='2'><label>За городом</label>
+</div>
+
+<div class="question">
+  <p>Вам важнее...</p>
+  <input type="radio" name="r3" id="Answer" data-value='2'><label>Комфорт</label>
+  <input type="radio" name="r3" id="Answer" data-value='1'><label>Стиль</label>
+</div>
+
+<button id="btnResutl" class="mybtn1">Result</button>
+<div id="resultFild" class="result"></div>
+</div>
+<script>
+var btnResutl = document.getElementById('btnResutl');
+var resultFild = document.getElementById('resultFild');
+var inputFild = document.getElementsByTagName('input');
+btnResutl.addEventListener('click', function(){
+    let resultedInputs = document.querySelectorAll("input[type='radio']:checked");
+    let result = 0;
+    Array.prototype.map.call(resultedInputs, (el)=>{
+      result += parseInt(el.dataset.value);
+    });
+    console.log(result);
+    if (result <7){
+      resultFild.innerHTML = 'Вам только на велосипед('}
+    if (result == 7){
+    resultFild.innerHTML = 'Вам подойдет седан'}
+    if (result == 8){
+      resultFild.innerHTML = 'Вам подойдет универсал'
+    }
+    if (result == 9){
+      resultFild.innerHTML = 'Вам подойдет внедорожник'
+    }
+});
+</script>
+    <script>
+        var menuElem = document.getElementById('aside');
+        var titleElem = menuElem.querySelector('.title');
+        titleElem.onmouseover = function() {
+        menuElem.classList.toggle('open');
+            }
+    </script>
+</body>

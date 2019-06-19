@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Quest</title>
+    <link href="style.css" rel="stylesheet">
+    <script>
+        document.createElement('aside');
+    </script>
+    <style>
+        a { 
+         text-decoration: none;
+        }
+    </style>
+</head>
+<body link="lightseagreen" vlink="lightseagreen" alink="gray">
+  <div class="back">
+      <aside id="aside" class="menu">
+          <a href="reg.html"><p>Регистрация</p></a>
+      </aside>
+<div class="testblock">
+<h3>Небольшой опрос</h3>
+<div class="question">
+  <p>Какие сериалы вам нравятся?</p>
+  <div class="one">
+  <input type="radio" name="r1" id="Answer" data-value='1'><label>Комедии</label>
+</div>
+  <div class="one">
+  <input type="radio" name="r1" id="Answer" data-value='4'><label>Детективы</label>
+</div>
+<div class="one">
+    <input type="radio" name="r1" id="Answer" data-value='7'><label>Фэнтези/Супергероика</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>Длинные или короткие?</p>
+  <div class="one">
+  <input type="radio" name="r2" id="Answer" data-value='2'><label>Длинные</label>
+</div>
+  <div class="one">
+  <input type="radio" name="r2" id="Answer" data-value='1'><label>Мини-сериалы</label>
+</div>
+</div>
+<button id="btnResutl" class="mybtn1">Результат</button>
+<div id="resultFild" class="result"></div>
+</div>
+</div>
+<script>
+    var btnResutl = document.getElementById('btnResutl');
+    var resultFild = document.getElementById('resultFild');
+    var inputFild = document.getElementsByTagName('input');
+    btnResutl.addEventListener('click', function(){
+        let resultedInputs = document.querySelectorAll("input[type='radio']:checked");
+        let result = 0;
+        Array.prototype.map.call(resultedInputs, (el)=>{
+          result += parseInt(el.dataset.value);
+        });
+        console.log(result);
+        if (result == 2){
+        resultFild.innerHTML = '<div class="res"><a href="shortcomedy.html">Тык</a></div>'
+        }
+        if (result == 3){
+          resultFild.innerHTML = '<div class="res"><a href="longcomedy.html">Тык</a></div>'
+        }
+        if (result == 5){
+          resultFild.innerHTML = '<div class="res"><a href="ShD.html">Тык</a></div>'
+        }
+        if (result == 6){
+          resultFild.innerHTML = '<div class="res"><a href="LongD.html">Тык</a></div>'
+        }
+        if (result == 8){
+          resultFild.innerHTML = '<div class="res"><a href="shortsuperhero.html">Тык</a></div>'
+        }
+        if (result == 9){
+          resultFild.innerHTML = '<div class="res"><a href="longsuperhero.html">Тык</a></div>'
+        }
+    });
+    </script>
