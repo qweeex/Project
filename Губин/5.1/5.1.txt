@@ -1,0 +1,31 @@
+#include "math.h"
+#include "iostream"
+#include <iomanip>
+
+using namespace std;
+
+double cut(double a, double b)
+{
+   b = pow (10,b);
+   double y = a*b;
+   double i,f;
+   f = modf(y,&i);
+   i /= b; 
+   return i;    
+}
+
+
+int main() {
+	setlocale(LC_ALL, "RUS");
+	double x,res;
+	cout << "Vvedite znachenie x: ";
+	cin >> x;
+	double round;
+	cout << "Vvedite kol-vo znakov posle zptoy: ";
+	cin >> round;
+	res = sqrt(fabs(pow(sin(x), 2))) / (x*3.01 - exp(2 * x));
+    res = cut (res,round);
+	cout << "x = " << res << "\n";
+	system("pause");
+    return 0;
+}
