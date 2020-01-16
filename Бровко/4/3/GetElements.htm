@@ -1,0 +1,67 @@
+<HTML>
+
+<HEAD>
+
+   <TITLE>Element Finder</TITLE>
+
+   <SCRIPT LANGUAGE="JavaScript">
+      const optionsArray = [];
+      const xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "Inventory.xml", true);
+      xhttp.send();  
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {    
+          const options = xhttp.responseXML.querySelector('BOOK').children;
+          setOptions(options);
+          showOptions();
+        }
+      }
+
+      function setOptions(array) {
+        for (let i = 0; i < array.length; i++) {
+          optionsArray[i] = array[i].tagName;
+        }
+      }
+      
+      function showOptions() {
+        const options = document.querySelector('#ElementName');
+        for (let i = 0; i < optionsArray.length; i++) {
+          const option = document.createElement('option');
+          option.innerHTML = optionsArray[i];
+          options.appendChild(option);
+          console.log(options, option);
+        }
+      };
+
+    function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+
+         NodeList = 
+            xmlDoc.getElementsByTagName(ElementName.value);
+        
+         ResultHTML = "";
+         for (i=0; i < NodeList.length; ++i)
+            ResultHTML += NodeList[i].childNodes[0].nodeValue + "\n\n";
+
+         if (ResultHTML == "")
+            ResultDiv.innerText = "<no matching elements found>";
+         else
+            ResultDiv.innerText = ResultHTML;
+        }
+
+   </SCRIPT>
+   
+</HEAD>
+
+<BODY>
+
+   <H2>Find Elements by Element Name</H2>
+   Element name: <select id='ElementName'>
+   <select>&nbsp;
+   <BUTTON onclick='myFunction(xhttp)'>Show Elements</BUTTON>
+   <HR>
+   <DIV ID=ResultDiv></DIV>
+   
+</BODY>
+
+</HTML>

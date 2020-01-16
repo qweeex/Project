@@ -1,0 +1,44 @@
+<HTML>
+
+<HEAD>
+
+   <TITLE>Element Finder</TITLE>
+
+   <SCRIPT LANGUAGE="JavaScript">
+      const optionsArray = [];
+      const xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "Inventory Attributes.xml", true);
+      xhttp.send();  
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {    
+          const options = xhttp.responseXML.querySelector('BOOK');
+          setOptions(options.attributes);
+          showOptions();
+        }
+      }
+
+      function setOptions(array) {
+        for (let i = 0; i < array.length; i++) {
+            optionsArray[i] = {attr: array[i].localName, value: array[i].nodeValue};
+        }
+        console.log(array);
+      }
+      
+      function showOptions() {
+        var s = "";
+        console.log(optionsArray);
+        optionsArray.forEach((item) => {
+            s+=(item.attr + " : " + item.value + " ; ");
+        })
+        alert(s);
+      };
+
+   </SCRIPT>
+   
+</HEAD>
+
+<BODY>
+   
+</BODY>
+
+</HTML>

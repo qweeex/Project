@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<People>
+	<Font1>
+		style is applied for this line
+	</Font1>
+	<Font2>
+		No style is applied for this line
+	</Font2>
+</People>

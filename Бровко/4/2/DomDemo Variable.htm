@@ -1,0 +1,63 @@
+<!-- Имя файла: DomDemo Variable.htm -->
+
+<HTML>
+
+<HEAD>
+
+   <TITLE>Book Inventory</TITLE>
+
+   <SCRIPT LANGUAGE="JavaScript" FOR="window" EVENT="ONLOAD">
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    myFunction(this);
+    }
+    };
+    xhttp.open("GET", "Inventory.xml", true);
+    xhttp.send();
+    var k = 1;
+    function myFunction(xml) {
+    var xmlDoc = xml.responseXML;      
+
+
+    HTMLCode = "";
+          
+    var bookList = xmlDoc.getElementsByTagName("BOOK");
+
+      for (i=0; i < bookList.length; i++)
+      {
+      HTMLCode += k++ + ")" +
+      "<SPAN STYLE='font-style:italic'>Title: </SPAN>"
+      + bookList[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue 
+      + "<BR>"
+      + "<SPAN STYLE='font-style:italic'>Author: </SPAN>"
+      + bookList[i].getElementsByTagName("AUTHOR")[0].childNodes[0].nodeValue 
+      + "<BR>"
+      + "<SPAN STYLE='font-style:italic'>Binding: </SPAN>"
+      + bookList[i].getElementsByTagName("BINDING")[0].childNodes[0].nodeValue 
+      + "<BR>"
+      + "<SPAN STYLE='font-style:italic'>Number of pages: "
+      + "</SPAN>"
+      + bookList[i].getElementsByTagName("PAGES")[0].childNodes[0].nodeValue 
+      + "<BR>"
+      + "<SPAN STYLE='font-style:italic'>Price: </SPAN>"
+      + bookList[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue 
+      + "<P>";
+      }
+        
+      DisplayDIV.innerHTML = HTMLCode;    
+   }     
+   </SCRIPT>
+   
+</HEAD>
+
+<BODY>
+
+   
+   <H2>Book Inventory</H2>
+   
+   <DIV ID="DisplayDIV"></DIV>
+
+</BODY>
+
+</HTML>

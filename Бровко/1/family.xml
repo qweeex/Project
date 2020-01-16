@@ -1,0 +1,43 @@
+<?xml version = "1.0"?>
+<PEOPLE>
+    <PERSON>
+        <Nouse_No>1</Nouse_No>
+        <Name>Robert</Name>
+        <Description>Father</Description>
+    </PERSON>
+    <PERSON>
+        <Nouse_No>1</Nouse_No>
+        <Name>Gloria</Name>
+        <Description>Mother</Description>
+    </PERSON>
+    <PERSON>
+        <Nouse_No>1</Nouse_No>
+        <Name>Susan</Name>
+        <Description>Child 1</Description>
+    </PERSON>
+    <PERSON>
+        <Nouse_No>1</Nouse_No>
+        <Name>Stephen</Name>
+        <Description>Child 2</Description>
+    </PERSON>
+    <PERSON>
+        <Nouse_No>2</Nouse_No>
+        <Name>John</Name>
+        <Description>Father</Description>
+    </PERSON>
+    <PERSON>
+        <Nouse_No>2</Nouse_No>
+        <Name>Mary</Name>
+        <Description>Mother</Description>
+    </PERSON>
+    <PERSON>
+        <Nouse_No>2</Nouse_No>
+        <Name>Joseph</Name>
+        <Description>Child 1</Description>
+    </PERSON>
+    <PERSON>
+        <Nouse_No>3</Nouse_No>
+        <Name>Linda</Name>
+        <Description>Individual</Description>
+    </PERSON>
+</PEOPLE>

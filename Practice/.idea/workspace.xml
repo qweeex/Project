@@ -2,16 +2,147 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30d3d1c5-b116-4400-b6e2-ce875c208131" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Time.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/src/serverchat/ChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/clientchat/ClientWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../network/src/networkchat/TCPConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../network/src/networkchat/TCPConnectionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JS/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/game.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/1_IDLE_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/1_IDLE_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/1_IDLE_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/1_IDLE_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/1_IDLE_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/2_WALK_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/2_WALK_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/2_WALK_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/2_WALK_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/2_WALK_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/3_WALK_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/3_WALK_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/3_WALK_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/3_WALK_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/3_WALK_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/4_JUMP_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/4_JUMP_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/4_JUMP_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/4_JUMP_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/4_JUMP_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/5_ATTACK_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/5_ATTACK_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/5_ATTACK_005.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/5_ATTACK_007.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/5_ATTACK_009.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/6_HURT_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/6_HURT_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/6_HURT_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/6_HURT_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/6_HURT_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/7_DIE_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/7_DIE_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/7_DIE_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/7_DIE_006.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/1/7_DIE_009.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/1_IDLE_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/1_IDLE_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/1_IDLE_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/1_IDLE_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/1_IDLE_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/2_WALK_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/2_WALK_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/2_WALK_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/2_WALK_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/2_WALK_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/3_RUN_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/3_RUN_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/3_RUN_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/3_RUN_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/3_RUN_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/4_JUMP_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/4_JUMP_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/4_JUMP_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/4_JUMP_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/4_JUMP_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/5_ATTACK_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/5_ATTACK_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/5_ATTACK_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/5_ATTACK_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/5_ATTACK_005.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/6_HURT_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/6_HURT_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/6_HURT_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/6_HURT_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/6_HURT_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/7_DIE_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/7_DIE_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/7_DIE_005.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/7_DIE_007.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/2/7_DIE_009.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/1_IDLE_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/1_IDLE_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/1_IDLE_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/1_IDLE_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/1_IDLE_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/2_WALK_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/2_WALK_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/2_WALK_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/2_WALK_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/2_WALK_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/3_RUN_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/3_RUN_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/3_RUN_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/3_RUN_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/3_RUN_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/4_JUMP_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/4_JUMP_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/4_JUMP_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/4_JUMP_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/4_JUMP_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/5_ATTACK_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/5_ATTACK_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/5_ATTACK_006.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/5_ATTACK_008.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/5_ATTACK_009.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/6_HURT_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/6_HURT_001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/6_HURT_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/6_HURT_003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/6_HURT_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/7_DIE_000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/7_DIE_002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/7_DIE_004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/7_DIE_006.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/3/7_DIE_008.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/arrow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/arrows.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/fg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/goblin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/ogre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/ogre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/rain.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/shield.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/img/troll.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Line.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Name.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unity/2D Platformer Sprites/ФлапиБёрд/terrain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spiral.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ермаков/3bl/src/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practice/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practice/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practice/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practice/Human.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practice/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practice/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practice/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practice/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unity/Game/.vs/Game/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../Unity/Game/.vs/Game/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unity/Game/.vs/Game/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../Unity/Game/.vs/Game/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unity/Game/.vs/Game/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../Unity/Game/.vs/Game/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unity/Game/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Unity/Game/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unity/Game/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../Unity/Game/Library/CurrentLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unity/Game/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Unity/Game/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unity/Game/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Unity/Game/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,17 +156,75 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            <state relative-caret-position="749">
+              <caret line="117" selection-start-line="117" selection-end-line="117" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Home.java">
+        <entry file="file://$PROJECT_DIR$/src/Comment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+            <state relative-caret-position="170">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Human.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="118" selection-start-line="8" selection-start-column="118" selection-end-line="8" selection-end-column="118" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Department.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Name.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Point.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Line.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+              <folding>
+                <element signature="e#327#328#0" expanded="true" />
+                <element signature="e#418#419#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,28 +239,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Human.java">
+        <entry file="file://$PROJECT_DIR$/src/Home.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Point.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Comment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            <state relative-caret-position="272">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -92,18 +263,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Time.java" />
-        <option value="$PROJECT_DIR$/src/Human.java" />
+        <option value="$PROJECT_DIR$/src/Home.java" />
+        <option value="$PROJECT_DIR$/src/Line.java" />
         <option value="$PROJECT_DIR$/src/Point.java" />
+        <option value="$PROJECT_DIR$/src/Name.java" />
+        <option value="$PROJECT_DIR$/src/HumanName.java" />
+        <option value="$PROJECT_DIR$/src/Human.java" />
+        <option value="$PROJECT_DIR$/src/Department.java" />
+        <option value="$PROJECT_DIR$/src/Employee.java" />
         <option value="$PROJECT_DIR$/src/Comment.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Home.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="818" />
-    <option name="y" value="102" />
-    <option name="width" value="974" />
+    <option name="x" value="960" />
+    <option name="width" value="967" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -112,8 +287,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,12 +303,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570396368137" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574193741287" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -182,16 +358,32 @@
       <workItem from="1569268901031" duration="1078000" />
       <workItem from="1569331986020" duration="9000" />
       <workItem from="1570387405102" duration="6324000" />
+      <workItem from="1570545720897" duration="872000" />
+      <workItem from="1570553270603" duration="236000" />
+      <workItem from="1570565687560" duration="1186000" />
+      <workItem from="1570890811298" duration="2591000" />
+      <workItem from="1571475748949" duration="925000" />
+      <workItem from="1571586880230" duration="2179000" />
+      <workItem from="1571594941367" duration="1793000" />
+      <workItem from="1574158038482" duration="1250000" />
+      <workItem from="1574190462396" duration="3279000" />
+      <workItem from="1574250171032" duration="671000" />
+      <workItem from="1574284568634" duration="138000" />
+      <workItem from="1574975834651" duration="138000" />
+      <workItem from="1574976390588" duration="681000" />
+      <workItem from="1575369309575" duration="242000" />
+      <workItem from="1576173959134" duration="9000" />
+      <workItem from="1576508993043" duration="580000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10108000" />
+    <option name="totallyTimeSpent" value="26878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15085287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -200,7 +392,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32583067" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -210,7 +402,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3279743" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -221,15 +413,100 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13326226" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32900432" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/HumanName.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Human.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="118" selection-start-line="8" selection-start-column="118" selection-end-line="8" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Name.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Line.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -240,31 +517,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Home.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
         </state>
       </provider>
     </entry>

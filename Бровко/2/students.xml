@@ -1,0 +1,70 @@
+<?xml version = "1.0"?>
+<!DOCTYPE SCHOOL [
+<!ELEMENT SCHOOL(CLASS+)>
+<!ELEMENT CLASS (No_of_Students, No_of_Present, No_of_Sections)>
+<!ELEMENT No_of_Students (#PCDATA)>
+<!ELEMENT No_of_Present (#PCDATA)>
+<!ELEMENT No_of_Sections (#PCDATA)>
+]>
+<SCHOOL>
+    <CLASS value="1"> 
+        <No_of_Students>120</No_of_Students>
+        <No_of_Present>117</No_of_Present>
+        <No_of_Sections>4</No_of_Sections>
+    </CLASS>
+    <CLASS value="2">
+        <No_of_Students>110</No_of_Students>
+        <No_of_Present>103</No_of_Present>
+        <No_of_Sections>3</No_of_Sections>
+    </CLASS>
+    <CLASS value="3">
+        <No_of_Students>90</No_of_Students>
+        <No_of_Present>89</No_of_Present>
+        <No_of_Sections>2</No_of_Sections>
+    </CLASS>
+    <CLASS value="4">
+        <No_of_Students>140</No_of_Students>
+        <No_of_Present>100</No_of_Present>
+        <No_of_Sections>4</No_of_Sections>
+    </CLASS>
+    <CLASS value="5">
+        <No_of_Students>80</No_of_Students>
+        <No_of_Present>79</No_of_Present>
+        <No_of_Sections>5</No_of_Sections>
+    </CLASS>
+    <CLASS value="6">
+        <No_of_Students>85</No_of_Students>
+        <No_of_Present>85</No_of_Present>
+        <No_of_Sections>4</No_of_Sections>
+    </CLASS>
+    <CLASS value="7">
+        <No_of_Students>89</No_of_Students>
+        <No_of_Present>89</No_of_Present>
+        <No_of_Sections>3</No_of_Sections>
+    </CLASS>
+    <CLASS value="8">
+        <No_of_Students>90</No_of_Students>
+        <No_of_Present>85</No_of_Present>
+        <No_of_Sections>2</No_of_Sections>
+    </CLASS>
+    <CLASS value="9">
+        <No_of_Students>85</No_of_Students>
+        <No_of_Present>80</No_of_Present>
+        <No_of_Sections>3</No_of_Sections>
+    </CLASS>
+    <CLASS value="10">
+        <No_of_Students>89</No_of_Students>
+        <No_of_Present>79</No_of_Present>
+        <No_of_Sections>2</No_of_Sections>
+    </CLASS>
+    <CLASS value="11">
+        <No_of_Students>60</No_of_Students>
+        <No_of_Present>58</No_of_Present>
+        <No_of_Sections>1</No_of_Sections>
+    </CLASS>
+    <CLASS value="12">
+        <No_of_Students>65</No_of_Students>
+        <No_of_Present>56</No_of_Present>
+        <No_of_Sections>1</No_of_Sections>
+    </CLASS>
+</SCHOOL>

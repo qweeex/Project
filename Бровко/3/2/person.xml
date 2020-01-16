@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<!DOCTYPE PEOPLE
+[
+	<!ELEMENT PEOPLE (PERSON+)>
+	<!ELEMENT PERSON (PersonId, Name, Address, Telephone, Fax, E-Mail)>
+	<!ELEMENT PersonId (#PCDATA)>
+	<!ELEMENT Name (#PCDATA)>
+	<!ELEMENT Address (#PCDATA)>
+	<!ELEMENT Telephone (#PCDATA)>
+	<!ELEMENT Fax (#PCDATA)>
+	<!ELEMENT E-Mail (#PCDATA)>
+]
+>
+
+<PEOPLE>
+	<PERSON> 
+		<PersonId>E01</PersonId>
+		<Name>Tony Blair</Name>
+		<Address>10 Downing Street, London, UK</Address>
+		<Telephone>(061) 98765</Telephone>
+		<E-Mail>blair@everywhere.com</E-Mail>
+	</PERSON>
+	<PERSON>
+		<PersonId>E02</PersonId>
+		<Name>Bill Clinton</Name>
+		<Address>White House, USA</Address>
+		<Telephone>(001) 6400 98765</Telephone>
+		<E-Mail>bill@everywhere.com</E-Mail>
+	</PERSON>
+	<PERSON>
+		<PersonId>E03</PersonId>
+		<Name>Tom Cruise</Name>
+		<Address>57 Jumbo Street, New York, USA</Address>
+		<Telephone>(001) 4500 67859</Telephone>
+		<E-Mail>cruise@everywhere.com</E-Mail>
+	</PERSON>
+	<PERSON>
+		<PersonId>E04</PersonId>
+		<Name>Lorena Bobbit</Name>
+		<Address>78 Crux Lane, London, UK</Address>
+		<Telephone>(061) 54 56789</Telephone>
+		<E-Mail>lorena@everywhere.com</E-Mail>
+	</PERSON>
+	<PERSON>
+		<PersonId>E05</PersonId>
+		<Name>Abraham Lincoln</Name>
+		<Address>White House, USA</Address>
+		<Telephone>(001) 6400 98765</Telephone>
+		<E-Mail>alincoln@everywhere.com</E-Mail>
+	</PERSON>
+	<PERSON>
+		<PersonId>E06</PersonId>
+		<Name>Margaret Tatcher</Name>
+		<Address>78 10 Downing Street, London, UK</Address>
+		<Telephone>(061) 98765</Telephone>
+		<E-Mail>mtatcher@everywhere.com</E-Mail>
+	</PERSON>
+</PEOPLE>
+
+    

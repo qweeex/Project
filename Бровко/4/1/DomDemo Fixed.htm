@@ -1,0 +1,59 @@
+<!-- Имя файла: DomDemo Fixed.htm -->
+<HTML>
+
+  <HEAD>
+  
+     <TITLE>Book Description</TITLE>
+    
+     <SCRIPT LANGUAGE="JavaScript" FOR="window" EVENT="ONLOAD">
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+      }
+      };
+      xhttp.open("GET", "Book.xml", true);
+      xhttp.send();
+  
+      function myFunction(xml) {
+      var xmlDoc = xml.responseXML;
+  
+      document.getElementById("title").innerHTML =
+        xmlDoc.getElementsByTagName("TITLE")[0].childNodes[0].nodeValue;
+      document.getElementById("author").innerHTML =
+        xmlDoc.getElementsByTagName("AUTHOR")[0].childNodes[0].nodeValue;
+      document.getElementById("binding").innerHTML =
+        xmlDoc.getElementsByTagName("BINDING")[0].childNodes[0].nodeValue;
+      document.getElementById("pages").innerHTML =
+        xmlDoc.getElementsByTagName("PAGES")[0].childNodes[0].nodeValue;
+      document.getElementById("price").innerHTML =
+        xmlDoc.getElementsByTagName("PRICE")[0].childNodes[0].nodeValue;
+        
+      }      
+  
+        
+     </SCRIPT>
+     
+  </HEAD>
+  
+  <BODY>
+  
+     <H2>Book Description</H2>
+  
+     <SPAN STYLE="font-style:italic">Title: </SPAN>
+     <SPAN ID="title" STYLE="font-weight:bold; color: red"></SPAN>      
+     <BR>
+     <SPAN STYLE="font-style:italic">Author: </SPAN>
+     <SPAN ID="author"></SPAN>      
+     <BR>
+     <SPAN STYLE="font-style:italic">Binding: </SPAN>
+     <SPAN ID="binding"></SPAN>      
+     <BR>
+     <SPAN STYLE="font-style:italic">Number of pages: </SPAN>
+     <SPAN ID="pages"></SPAN>      
+     <BR>
+     <SPAN STYLE="font-style:italic">Price: </SPAN>
+     <SPAN ID="price" STYLE="color: green"></SPAN>      
+  </BODY>
+  
+  </HTML>
