@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootst.." integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <center>
+    <br>
+    <div>
+        <div>
+          <h2>Расчёт</h2>
+          <p id="result"></p>
+        </div>
+        <div>
+          <a>Толщина бревна (мм)</a>
+          <input type="text" class="form-control add-count validation wood" id="wood" autofocus required maxlength="25" placeholder="0" required pattern=[0-9]>
+        </div>
+        <div>
+          <div>
+              <h2>Размеры сруба дома</h2>
+            <a>Длина</a>
+            <input type="text" class="form-control add-count validation length" required maxlength="25" placeholder="0" id="length" required pattern=[0-9]>
+          </div>
+          <div>
+            <a>Ширина</a>
+            <input type="text" class="form-control add-count validation width" required maxlength="25" placeholder="0" id="width" required pattern=[0-9]>
+          </div>
+        </div>
+        <div>
+          <a>Высота</a>
+          <input type="text" class="form-control add-count validation height" required maxlength="25" placeholder="0" id="height" required pattern=[0-9]>
+        </div>
+        <div>
+            <h2>Межкомнатные стены и их размеры</h2>
+          <a>Стена 1</a>
+          <input type="text" class="form-control add-count validation wall" required maxlength="25" placeholder="0" id="wall" required pattern=[0-9]>
+        </div>
+        <div>
+          <div>
+            <button class="btn btn-dark add-submit" id="add-btn">Добавить стену</button>
+          </div>
+          <div>
+            <button class="btn btn-dark add-submit" id="rem-btn">Удалить стену</button>
+          </div>
+          <div>
+            <button class="btn btn-dark add-submit res-btn" id="res-btn">Расчет бревен</button>
+          </div>
+        </div>
+      </div>    
+    </center>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
